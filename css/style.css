@@ -12,5 +12,82 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1rem;
+  gap: 0.3rem;
+}
+.digital-digit {
+  width: fit-content;
+  min-width: 130px;
+  height: fit-content;
+  /* background-color: green; */
+}
+.digital-segments {
+  width: auto;
+  height: 150px;
+  position: relative;
+}
+.a,
+.d,
+.g {
+  position: absolute;
+  width: 45px;
+  height: 15px;
+  border-radius: 100px/100px;
+}
+.b,
+.c,
+.e,
+.f {
+  position: absolute;
+  width: 15px;
+  height: 55px;
+  border-radius: 100px/100px;
+  color: red;
+}
+.a {
+  left: 50%;
+  transform: translate(-45%, 130%);
+}
+.d {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-45%, -80%);
+}
+.g {
+  top: 50%;
+  transform: translate(100%, -25%);
+  /* display: none; */
+}
+.b {
+  top: 0;
+  right: 20%;
+  transform: translate(10%, 40%);
+}
+.c {
+  top: 40%;
+  right: 20%;
+  transform: translate(10%, 40%);
+}
+.e {
+  top: 40%;
+  left: 20%;
+  transform: translate(10%, 40%);
+}
+.f {
+  top: 0;
+  left: 20%;
+  transform: translate(10%, 40%);
+}
+
+.a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.g,
+.zero {
+  background-color: rgba(0, 0, 0, 0.144);
+}
+.one {
+  background-color: rgb(37, 37, 37);
 }
